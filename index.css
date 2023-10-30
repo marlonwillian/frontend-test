@@ -1,0 +1,35 @@
+/* Tive que trocar para CSS ao invés de de SCSS porque meu navegador não estava reconhecendo o estilo no formato SCSS. */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: green;
+    
+}
+
+header {
+    color: white;
+}
+
+.imagens_inicio {
+    display: inline-block;
+    width: 300px;
+}
+
+.texto_esquerda {
+    margin: none;
+    position: absolute;
+    top: 70px;
+}
+
+#p_esquerda {
+    position: relative;
+    width: 700px;
+}
+
+section#seletores {
+    background-color: white;
+}
+
+section#resultados {
+    background-color: #e1dddd;
+}
