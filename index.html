@@ -8,10 +8,55 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/sections.css">
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <header>
+      <div>
+        <img src="images/icons/logo-white.svg" id="greenthumb" alt="Greenthumb" />
+        <h1 id="texto_principal">Find your <br> next green <br> friend</h1>
+        <img src="images/icons/arrow-down.svg" id="seta_baixo" alt="seta para baixo" />
+
+        <img src="images/hero/desktop/left-leaves.png" id="img_esquerda" class="img_inicio" alt="plantas lado esquerdo">
+        <img src="images/hero/desktop/plantperson.png" id="img_meio" class="img_inicio" alt="pessoa segurando planta">
+        <img src="images/hero/desktop/right-leaves.png" id="img_direita" class="img_inicio" alt="plantas lado direito">
+      </div>
+    </header>
+
+    <section id="seletores">
+      <div>
+        <img src="images/illustrations/sun.png" class="emojis" id="sol" alt="sol">
+        <p>1. Set the amount of <span>sunlight</span> <br> your plant will get.</p>
+        <select name="" id="">
+          <option value="" class="selecionado" disabled selected>Select...</option>
+        </select>
+      </div>
+
+      <div>
+        <img src="images/illustrations/wateringcan.png" class="emojis" id="regador" alt="regador">
+        <br>
+        <p>2. How often do you want to <br> <span>water</span> your plant?<br></p>
+        <select name="" id="">
+          <option value="" disabled selected>Select...</option>
+        </select>
+      </div>
+
+      <div>
+        <img src="images/illustrations/dog.png" class="emojis" id="cachorro" alt="cachorro">
+        <br>
+        <p>3. Do you have pets? Do <br> they <span>chew</span> plants?<br></p>
+        <select name="" id="">
+          <option value="" disabled selected>Select...</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <h2>No results yet...</h2>
+      <span>Use the filters above to find the plant that best fits your environment :)</span>
+      <img src="images/illustrations/no-results.png" alt="sem resultados">
+    </section>
   </body>
 </html>
