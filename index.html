@@ -28,35 +28,47 @@
     <section id="seletores">
       <div>
         <img src="images/illustrations/sun.png" class="emojis" id="sol" alt="sol">
-        <p>1. Set the amount of <span>sunlight</span> <br> your plant will get.</p>
-        <select name="" id="">
-          <option value="" class="selecionado" disabled selected>Select...</option>
+        <p><span>1.</span> Set the amount of <span>sunlight</span> <br> your plant will get.</p>
+        <select name="sunlight" id="sunlight">
+          <option disabled selected>Select...</option>
+          <option value="no">No</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
         </select>
       </div>
 
       <div>
         <img src="images/illustrations/wateringcan.png" class="emojis" id="regador" alt="regador">
         <br>
-        <p>2. How often do you want to <br> <span>water</span> your plant?<br></p>
-        <select name="" id="">
-          <option value="" disabled selected>Select...</option>
+        <p><span>2.</span> How often do you want to <br> <span>water</span> your plant?<br></p>
+        <select name="water" id="water">
+          <option disabled selected>Select...</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily</option>
+          <option value="rarely">Rarely</option>
         </select>
       </div>
 
       <div>
         <img src="images/illustrations/dog.png" class="emojis" id="cachorro" alt="cachorro">
         <br>
-        <p>3. Do you have pets? Do <br> they <span>chew</span> plants?<br></p>
-        <select name="" id="">
-          <option value="" disabled selected>Select...</option>
+        <p><span>3.</span> Do you have pets? Do <br> they <span>chew</span> plants?<br></p>
+        <select name="pets" id="pets">
+          <option disabled selected>Select...</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
         </select>
       </div>
     </section>
 
     <section id="resultados">
-      <h2>No results yet...</h2>
-      <span>Use the filters above to find the plant that best fits your environment :)</span>
+      <div>
+        <h1>No results yet...</h1>
+        <span>Use the filters above to find<br> the plant that best fits your<br> environment :)</span>
+      </div>
       <img src="images/illustrations/no-results.png" alt="sem resultados">
     </section>
+
+    <footer></footer>
   </body>
 </html>
