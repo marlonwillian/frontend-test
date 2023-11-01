@@ -22,6 +22,10 @@ let plantas = [euphorbia, succculent, bunny, ficus, bamboo, ponytail, pilea, cal
 
 // ids em html
 
+let sel_sunlight = document.getElementById("sunlight")
+let sel_water = document.getElementById("water")
+let sel_pets = document.getElementById("pets")
+
 let sec_resultados = document.getElementById("resultados")
 let sec_produtos = document.getElementById("produtos")
 let pular = document.getElementById("pular")
@@ -43,6 +47,9 @@ function verifica_sol(sun) {
     sec_produtos.style.display = "block"
     pular.style.display = "block"
 
+    sel_water.options[0].selected = "true"
+    sel_pets.options[0].selected = "true"
+
     for (i = 0; i < 9; i++) {
         if (plantas_2[i].style.display = "inline-block") {
             plantas_2[i].style.display = "none"
@@ -60,6 +67,9 @@ function verifica_agua(water) {
     sec_resultados.style.display = "none"
     sec_produtos.style.display = "block"
     pular.style.display = "none"
+
+    sel_sunlight.options[0].selected = "true"
+    sel_pets.options[0].selected = "true"
 
     for (i = 0; i < 9; i++) {
         if (plantas_2[i].style.display = "inline-block") {
@@ -79,6 +89,9 @@ function verifica_pets(pets) {
     sec_produtos.style.display = "block"
     pular.style.display = "block"
 
+    sel_sunlight.options[0].selected = "true"
+    sel_water.options[0].selected = "true"
+
     for (i = 0; i < 9; i++) {
         if (plantas_2[i].style.display = "inline-block") {
             plantas_2[i].style.display = "none"
@@ -86,7 +99,7 @@ function verifica_pets(pets) {
     }
 
     for (i = 0; i < 9; i++) {
-        if (plantas[i]["toxicity"] == pets) {
+        if (plantas[i]["toxicity"] != pets) {
             plantas_2[i].style.display = "inline-block"
         }
     }

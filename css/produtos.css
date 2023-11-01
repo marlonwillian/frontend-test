@@ -80,6 +80,7 @@ div#plantas {
     width: 230px;
     height: 210px;
     text-align: center;
+    transition: 0.5s;
 }
 
 .cartao > img {
@@ -95,12 +96,18 @@ div#plantas {
 .cartao > div > span{
     display: flex;
     position: relative;
+
+    color: #15573f;
     
     text-align: left;
     padding: 15px 15px 0px 15px;
     top: 20px;
     
     font-size: 15px;
+}
+
+.cartao:hover {
+    box-shadow: 1px 1px 5px black;
 }
 
 footer {
