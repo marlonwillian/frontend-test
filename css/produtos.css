@@ -1,67 +1,5 @@
 /* Tive que trocar para CSS ao invés de de SCSS porque meu navegador não estava reconhecendo o estilo no formato SCSS. */
 
-section#seletores {
-    background-color: white;
-    height: 300px;
-    text-align: center;
-}
-
-section#seletores > div {
-    display: inline-block;
-    padding: 55px 95px 10px 95px;
-}
-
-.emojis {
-    position: relative;
-    width: 80px;
-    right: 70px;
-    padding-bottom: 10px;
-}
-
-#regador {
-    transform: scaleX(-1);
-    width: 95px;
-}
-
-#cachorro {
-    right: 75px;
-}
-
-span {
-    color: #494949;
-    font-weight: bold;
-}
-
-p {
-    margin-top: 0px;
-    text-align: left;
-}
-
-div > select {
-    position: relative;
-    right: 15px;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    background-image: url(../images/icons/arrow-down2.svg);
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    background-position: 180px;
-    background-size: 20px;
-
-    width: 220px;
-    height: 45px;
-
-    color: #606060;
-    border: 1px solid #606060;
-    border-radius: 50px;
-
-    font-size: 14px;
-    padding-left: 15px;
-}
-
 section#resultados {
     display: block;
     height: 400px;
@@ -103,7 +41,7 @@ section#resultados > img {
 
 section#produtos {
     display: none;
-    height: 400px;
+    height: 800px;
     
     background-color: #f6f6f6;
     text-align: center;
@@ -126,6 +64,43 @@ div#titulo > h1 {
 
     font-size: 48px;
     margin: 20px;
+}
+
+div#plantas {
+    text-align: left;
+    margin-left: 220px;
+}
+
+.cartao {
+    display: none;
+
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+
+    width: 230px;
+    height: 210px;
+    text-align: center;
+}
+
+.cartao > img {
+    position: relative;
+
+    max-width:200px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+    top: 30px;
+}
+
+.cartao > div > span{
+    display: flex;
+    position: relative;
+    
+    text-align: left;
+    padding: 15px 15px 0px 15px;
+    top: 20px;
+    
+    font-size: 15px;
 }
 
 footer {
