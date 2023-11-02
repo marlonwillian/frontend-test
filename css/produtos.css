@@ -47,18 +47,18 @@ section#produtos {
     text-align: center;
 }
 
-div#titulo {
+div#titulo_2 {
     position: relative;
     right: 450px;
 
     padding-top: 30px;
 }
 
-div#titulo > img {
+div#titulo_2 > img {
     width: 150px;
 }
 
-div#titulo > h1 {
+div#titulo_2 > h1 {
     position: relative;
     left: 135px;
 

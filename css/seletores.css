@@ -7,6 +7,7 @@ section#seletores {
 }
 
 section#seletores > div {
+    position: relative;
     display: inline-block;
     padding: 55px 95px 10px 95px;
 }
@@ -60,4 +61,10 @@ div > select {
 
     font-size: 14px;
     padding-left: 15px;
+}
+
+/* responsividade */
+
+@media (max-width: 1260px) {
+    
 }
