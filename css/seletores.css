@@ -3,6 +3,7 @@
 section#seletores {
     background-color: white;
     height: 300px;
+    width: auto;
     text-align: center;
 }
 
@@ -65,6 +66,38 @@ div > select {
 
 /* responsividade */
 
-@media (max-width: 1260px) {
-    
+@media (max-width: 1275px) {
+    section#seletores {
+        height: auto;
+        width: auto;
+        min-width: 660px;
+    }
+
+    section#seletores > div {
+        padding: 55px 30px 55px 30px;
+    }
+}
+
+@media (max-width: 885px) {
+    section#seletores > div#div_agua {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    section#seletores > div#div_agua {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    section#seletores > div#div_sol, div#div_agua, div#div_dog {
+        right: 30px;
+
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }

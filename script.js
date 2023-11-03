@@ -87,7 +87,6 @@ function verifica_agua(water) {
 function verifica_pets(pets) {
     sec_resultados.style.display = "none"
     sec_produtos.style.display = "block"
-    pular.style.display = "block"
 
     sel_sunlight.options[0].selected = "true"
     sel_water.options[0].selected = "true"

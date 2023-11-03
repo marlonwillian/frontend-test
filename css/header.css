@@ -3,7 +3,9 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #75bc97;
-    margin: 0px;
+    margin: auto;
+
+    overflow-x: hidden;
 }
 
 header {
@@ -56,10 +58,10 @@ div#img_mobile {
 }
 
 div#textos_inicio {
-    display: none;
+    display: block;
     position: absolute;
     top: 56px;
-    left: 275px;
+    left: 250px;
 
     width: 345px;
     height: 300px;
@@ -105,6 +107,23 @@ div#textos_inicio {
     #img_direita {
         height: 330px;
     }
+
+    div#textos_inicio {
+        top: 40px;
+        left: 215px;
+    
+        width: 345px;
+        height: 300px;
+        
+        font-size: 23px;
+    }
+
+    #seta_baixo {
+        position: absolute;
+        top: 230px;
+    
+        width: 30px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -125,6 +144,23 @@ div#textos_inicio {
     #img_direita {
         width: 35%;
         height: 280px;
+    }
+
+    div#textos_inicio {
+        top: 20px;
+        left: 150px;
+    
+        width: 345px;
+        height: 300px;
+        
+        font-size: 20px;
+    }
+
+    #seta_baixo {
+        position: absolute;
+        top: 210px;
+    
+        width: 30px;
     }
 }
 
@@ -147,32 +183,77 @@ div#textos_inicio {
         width: 35%;
         height: 230px;
     }
+
+    div#textos_inicio {
+        top: 20px;
+        left: 100px;
+    
+        width: 345px;
+        height: 300px;
+        
+        font-size: 15px;
+    }
+
+    div#textos_inicio > h1{
+        top: 42px;
+    }
+
+
+    #seta_baixo {
+        position: absolute;
+        top: 170px;
+    
+        width: 25px;
+    }
 }
 
 @media (max-width: 800px) {
     header > div {
-        height: 180px;
+        height: 210px;
     }
 
     #img_esquerda {
         width: 47%;
-        height: 180px;
+        height: 210px;
     }
 
     #img_meio {
         width: 18%;
-        height: 130px;
+        height: 160px;
     }
 
     #img_direita {
         width: 35%;
-        height: 180px;
+        height: 210px;
+    }
+
+    div#textos_inicio {
+        top: 20px;
+        left: 60px;
+    
+        width: 345px;
+        height: 300px;
+        
+        font-size: 15px;
+    }
+
+    div#textos_inicio > h1{
+        top: 38px;
+    }
+
+
+    #seta_baixo {
+        position: absolute;
+        top: 155px;
+    
+        width: 23px;
     }
 }
 
 @media (max-width: 660px) {
     header {
-        height: 914px;
+        height: 1000px;
+        margin-bottom: 150px;
     }
 
     div#img_desktop {
@@ -181,62 +262,111 @@ div#textos_inicio {
 
     div#img_mobile {
         display: grid;
-        height: auto;
 
         margin: auto;
 
         max-height: 400px;
-        height: 300px;
+        height: 900px;
     }
 
     #img_cima {
-        /* max-width: 100%; */
-        height: 900px;
-        width: auto;
+        position: relative;
+
+        height: 850px;
+        width: 660px;
+        z-index: 1;
     }
 
     #img_baixo {
+        position: relative;
+        bottom: 150px;
+        left: 100px;
         height: 400px;
+    }
+
+    div#textos_inicio {
+        top: 100px;
+        left: 100px;
+    
+        width: 550px;
+        height: 300px;
+        
+        font-size: 45px;
+        z-index: 2;
+    }
+
+    div#textos_inicio > h1{
+        top: 38px;
+    }
+
+
+    #seta_baixo {
+        position: absolute;
+        top: 385px;
+    
+        width: 50px;
     }
 }
 
-/* 
+@media (max-width: 630px) {
+    header {
+        height: 900px;
+        margin-bottom: 150px;
+    }
 
-div#img_desktop {
-    margin: auto;
+    #img_cima {
+        height: 800px;
+        width: 660px;
+    }
 
-    max-height: 400px;
-    height: 400px;
+    #img_baixo {
+        position: relative;
+        bottom: 150px;
+        left: 100px;
+        height: 380px;
+    }
+
+    div#textos_inicio {
+        top: 50px;
+        left: 50px;
+    }
 }
 
-#img_esquerda {
-    float: left;
 
-    height: auto;
-    width: 50%;
+@media (max-width: 600px) {
+    header {
+        height: 800px;
+        margin-bottom: 150px;
+    }
 
-    max-width: 100%;
-    max-height: 400px;
+    #img_cima {
+        height: 700px;
+        width: 660px;
+    }
+
+    #img_baixo {
+        position: relative;
+        bottom: 130px;
+        left: 130px;
+        height: 350px;
+    }
 }
 
-#img_meio {
-    height: auto;
-    width: 18%;
-    
-    padding-top: 30px;
+@media (max-width: 550px) {
+    header {
+        height: 800px;
+        margin-bottom: 150px;
+    }
 
-    max-width: 100%;
-    max-height: 350px;  
+    #img_cima {
+        height: 650px;
+        width: 660px;
+    }
+
+    #img_baixo {
+        position: relative;
+        bottom: 80px;
+        left: 100px;
+        height: 350px;
+    }
 }
-
-#img_direita {
-    float: right;
-
-    height: auto;
-    width: 30%;
-
-    max-width: 100%;
-    max-height: 400px;
-}
-
-*/
