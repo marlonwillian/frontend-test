@@ -8,10 +8,162 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/seletores.css">
+    <link rel="stylesheet" href="css/produtos.css">
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <header>
+      <div>
+        <div id="textos_inicio">
+          <img src="images/icons/logo-white.svg" id="greenthumb" alt="Greenthumb" />
+          <h1 id="titulo">Find your <br> next green <br> friend</h1>
+          <img src="images/icons/arrow-down.svg" id="seta_baixo" alt="seta para baixo" />
+        </div>
+
+        <div id="img_desktop">
+          <img src="images/hero/desktop/left-leaves.png" id="img_esquerda" class="img_inicio" alt="plantas lado esquerdo">
+          <img src="images/hero/desktop/plantperson.png" id="img_meio" class="img_inicio" alt="pessoa segurando planta">
+          <img src="images/hero/desktop/right-leaves.png" id="img_direita" class="img_inicio" alt="plantas lado direito">
+        </div>
+
+        <div id="img_mobile">
+          <img src="images/hero/mobile/mobile-leaves.png" id="img_cima" alt="plantas mobile">
+          <img src="images/hero/mobile/mobile-plantperson.png" id="img_baixo" alt="pessoa segurando planta">
+        </div>
+      </div>
+    </header>
+
+    <section id="seletores">
+      <div id="div_sol">
+        <img src="images/illustrations/sun.png" class="emojis" id="sol" alt="sol">
+        <p><span>1.</span> Set the amount of <span>sunlight</span> <br> your plant will get.</p>
+        <select name="sunlight" id="sunlight" onchange="verifica_sol(this.value)">
+          <option disabled selected>Select...</option>
+          <option value="no">No</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+
+      <div id="div_agua">
+        <img src="images/illustrations/wateringcan.png" class="emojis" id="regador" alt="regador">
+        <br>
+        <p><span>2.</span> How often do you want to <br> <span>water</span> your plant?<br></p>
+        <select name="water" id="water" onchange="verifica_agua(this.value)">
+          <option disabled selected>Select...</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </div>
+
+      <div id="div_dog">
+        <img src="images/illustrations/dog.png" class="emojis" id="cachorro" alt="cachorro">
+        <br>
+        <p><span>3.</span> Do you have pets? Do <br> they <span>chew</span> plants?<br></p>
+        <select name="pets" id="pets" onchange="verifica_pets(this.value)">
+          <option disabled selected>Select...</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <div>
+        <h1>No results yet...</h1>
+        <span>Use the filters above to find<br> the plant that best fits your<br> environment :)</span>
+      </div>
+      <img src="images/illustrations/no-results.png" alt="sem resultados">
+    </section>
+    
+    <section id="produtos">
+      <div id="titulo_2">
+        <img id="img_pick" src="images/illustrations/pick.png" alt="picks">
+        <h1>Our picks <br id="pular_2">for you</h1>
+      </div>
+      
+      <div id="plantas">
+        <div class="cartao" id="euphorbia_id">
+          <img src="images/plant photos/euphorbia-eritrea.png" alt="">
+          <div>
+            <span>Euphorbia Eritrea</span>
+            <span>$25</span>
+          </div>
+        </div>
+
+        <div class="cartao" id="succulent_id">
+          <img src="images/plant photos/succulent-bowl.png" alt="">
+          <div>
+            <span>Succulent Bowl</span>
+            <span>$30</span>
+          </div>
+        </div>
+        
+        <div class="cartao" id="bunny_id">
+          <img src="images/plant photos/bunny-ears-cacti.png" alt="">
+          <div>
+            <span>Bunny ears cacti</span>
+            <span>$20</span>
+          </div>
+        </div>
+
+        <div class="cartao" id="ficus_id">
+          <img src="images/plant photos/ficus-lyrata.png" alt="">
+          <div>
+            <span>Ficus Lyrata</span>
+            <span>$30</span>
+          </div>
+        </div>
+        <br id="pular">
+
+        <div class="cartao" id="bamboo_id">
+          <img src="images/plant photos/lucky-bamboo.png" alt="">
+          <div>
+            <span>Lucky Bamboo</span>
+            <span>$15</span>
+          </div>
+
+        </div>
+        <div class="cartao" id="ponytail_id">
+          <img src="images/plant photos/ponytail-palm.png" alt="">
+          <div>
+            <span>Ponytail Palm</span>
+            <span>$50</span>
+          </div>
+        </div>
+
+        <div class="cartao" id="pilea_id">
+          <img src="images/plant photos/pilea-peperomioides.png" alt="">
+          <div>
+            <span>Pilea Peperomioides</span>
+            <span>$50</span>
+          </div>
+        </div>
+
+        <div class="cartao" id="calathea_id">
+          <img src="images/plant photos/calathea-triostar.png" alt="">
+          <div>
+            <span>Calathea Triostar</span>
+            <span>$50</span>
+          </div>
+        </div>
+
+        <div class="cartao" id="monstera_id">
+          <img src="images/plant photos/monstera-deliciosa.png" alt="">
+          <div>
+            <span>Monstera Deliciosa</span>
+            <span>$50</span>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>

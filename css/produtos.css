@@ -1,0 +1,195 @@
+/* Tive que trocar para CSS ao invés de de SCSS porque meu navegador não estava reconhecendo o estilo no formato SCSS. */
+
+section#resultados {
+    display: block;
+    height: 400px;
+    width: auto;
+    margin: auto;
+
+    background-color: #e9e9e9;
+    text-align: center;
+    color: #00000050;
+}
+
+section#resultados > div {
+    display: inline-block;
+
+    position: relative;
+    top: 40px;
+    right: 190px;
+    width: auto;
+
+    text-align: left;
+}
+
+section#resultados > div > h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    font-size: 55px; 
+}
+
+section#resultados > div > span {
+    font-size: 19px;
+    color: #00000050;
+}
+
+section#resultados > img {
+    position: relative;
+
+    width: 120px;
+    top: 80px;
+    left: 45px;
+}
+
+section#produtos {
+    display: none;
+    height: auto;
+    
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+div#titulo_2 {
+    position: relative;
+    right: 450px;
+
+    text-align: left;
+    margin-left: 520px;
+
+    padding-top: 30px;
+}
+
+div#titulo_2 > img {
+    width: 150px;
+}
+
+div#titulo_2 > h1 {
+    position: relative;
+    left: 135px;
+
+    font-size: 48px;
+    margin: 20px;
+
+    min-width: 250px;
+}
+
+img#img_pick {
+    margin-left: 160px;
+}
+
+div#plantas {
+    width: auto;
+    text-align: left;
+    
+    margin-left: 220px;
+    margin-right: 220px;
+    padding-bottom: 50px;
+}
+
+div#plantas > br#pular {
+    display: none;
+}
+
+.cartao {
+    display: none;
+
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+
+    width: 230px;
+    height: 210px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.cartao > img {
+    position: relative;
+
+    max-width:200px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+    top: 30px;
+}
+
+.cartao > div > span{
+    display: flex;
+    position: relative;
+
+    color: #15573f;
+    
+    text-align: left;
+    padding: 15px 15px 0px 15px;
+    top: 20px;
+    
+    font-size: 15px;
+}
+
+.cartao:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+footer {
+    background-color: #eeeeee;
+    margin: auto;
+    height: 500px;
+    width: auto;
+    min-width: 660px;
+}
+
+/* responsividade */
+
+@media (max-width: 1453px) {
+    element.style {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    section#resultados {
+        height: 550px;
+        min-width: 660px;
+    }
+
+    section#resultados > div{
+        display: grid;
+        text-align: center; 
+        top: 40px;
+        left: 0px;
+    }
+
+    section#resultados > img {
+        position: relative;
+        width: 120px;
+        top: 80px;
+        left: 0px;
+    }
+
+    section#produtos {
+        min-width: 660px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    div#plantas {
+        display: grid;
+    }
+
+    .cartao {   
+        position: relative;
+
+        width: 270px;
+        height: 300px;
+        
+    }
+
+    .cartao > img {
+        max-height:200px;
+    }
+
+    section#produtos {
+        min-width: 660px;
+    }
+}
